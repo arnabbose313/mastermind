@@ -13,7 +13,7 @@
 
 <body>
   <div class="cointainer">
-    <form class="contact" id="connect" action="https://formsubmit.co/sirarnab.bose.2006@gmail.com" method="POST">
+    <form class="contact" id="connect" method="post">
       <div class="contact-title">
         <h2>Get in touch</h2>
         <hr>
@@ -21,16 +21,12 @@
       <input type="text" name="name" id="name" placeholder="Enter your name..." class="contact-input" required>
       <input type="email" name="email" id="email" placeholder="Enter your email..." class="contact-input" required>
       <textarea id="message" name="message" placeholder="Write down your query here..." class="contact-input" required></textarea>
-      <input type="hidden" name="_next" value="https://arnabbose313.github.io/mastermind/contact.html">
-      <input type="hidden" name="_subject" value="Email to mastermind">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_autoresponse" value="Your messages has been send to our end. Our team will reach you soon.">
-      <input type="hidden" name="_template" value="table">
       <button type="submit" id="send">Submit <i class="fa-solid fa-arrow-right"></i></button>
     </form>
   </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="script.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

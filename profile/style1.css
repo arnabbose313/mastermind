@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -68,7 +67,7 @@ body{
     border-radius: 50px;
     background: linear-gradient(270deg, #ff994f, #fa6d86);
     cursor: pointer;
-=======
+}
 #nav{
 	justify-content:center;
 }
@@ -190,5 +189,4 @@ body{
 	font-size:10px;
 	margin-top:10px;
 	display:none;
->>>>>>> bc9dcd0 (Backup)
 }
