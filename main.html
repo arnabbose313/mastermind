@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sir Arnab Bose</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="nav" >
+    	<img src="trophy.png" alt="Coin" id="photo">
+    	<label id="coin"></label>
+    	<img src="profile.png" alt="Profile" id="photo1">
+    </div>
+    <p id="heading" >Mastermind</p>
+    <p id="held" >Earn money using your math skill.</p>
+    <div class="add sty" id="add" >
+    	<img src="add.png" alt="Icon">
+    	<label>ADDITION</label>
+    </div>
+    <div class="sub sty" id="sub" >
+  		<img src="sub.png" alt="Icon">
+    	<label>SUBTRACTION</label>
+    </div>
+    <div class="mul sty" id="mul" >
+    	<img src="mul.png" alt="Icon">
+    	<label>MULTIPLICATION</label>
+    </div>
+    <div class="div sty" id="div" >
+    	<img src="div.png" alt="Icon">
+    	<label>DIVISION</label>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="ncd.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+	    	document.getElementById("coin").innerHTML = window.atob(nts);
+	    	setInterval(function(){
+	    		if(window.navigator.onLine == false){
+	    			window.location.href="logo.html?net";
+	    		}
+	    	},1000);
+	    	$("#photo1").click(function(){
+	    		window.location.href="profile.html";
+	    	});
+	    	$(".sty").click(function(){
+	  		 	window.location.href="calc.html?type="+this.id;
+	    	});
+    	});
+    </script>
+  </body>
+</html>
