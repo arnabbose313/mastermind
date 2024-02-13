@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    document.getElementById("hello").setAttribute("style", "display: block;");
     document.getElementById("coin").innerHTML = window.atob(nts);
     let loc = window.location.search.toString().slice(6, window.location.search.length);
     let digit_1 = Math.floor(Math.random() * 99);
