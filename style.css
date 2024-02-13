@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+#hello{
+	display: none;
+}
+
 h1 {
 	color: #ebdc34;
 }
