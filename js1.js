@@ -39,7 +39,7 @@ $(document).ready(function () {
             //win
 
             $(".notxt").click(function(){
-                console("NO thenaks");
+                console.log("NO thenaks");
             });
 
             $(".claim").click(function () {
