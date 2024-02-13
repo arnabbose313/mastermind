@@ -39,7 +39,7 @@ $(document).ready(function () {
             //win
 
             $(".notxt").click(function(){
-                let point = window.atob(nts) + 1;
+                let point = Number(window.atob(nts)) + 1;
                 console.log(point);
             });
 
