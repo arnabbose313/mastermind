@@ -40,11 +40,12 @@ $(document).ready(function () {
 
             $(".notxt").click(function(){
                 let point = Number(window.atob(nts)) + 1;
-                console.log(point);
+                alert(btoa(point) + "noarnab");
             });
-
+            
             $(".claim").click(function () {
-                location.reload();
+                let point = Number(window.atob(nts)) + 10;
+                alert(btoa(point) + "adarnab");
             });
 
         } else {
