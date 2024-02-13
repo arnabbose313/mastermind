@@ -38,10 +38,13 @@ $(document).ready(function () {
             $(".notxt").css("display", "block");
             //win
 
+            $(".notxt").click(function(){
+                console("NO thenaks");
+            });
+
             $(".claim").click(function () {
                 location.reload();
             });
-
 
         } else {
             $(".shadow").css("visibility", "visible");
