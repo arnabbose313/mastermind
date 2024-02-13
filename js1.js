@@ -39,7 +39,8 @@ $(document).ready(function () {
             //win
 
             $(".notxt").click(function(){
-                console.log("NO thenaks");
+                let point = window.atob(nts) + 1;
+                console.log(point);
             });
 
             $(".claim").click(function () {
