@@ -1,1 +1,0 @@
-var nts = "NDc=";
