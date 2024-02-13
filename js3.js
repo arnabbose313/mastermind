@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    document.getElementById("hello").setAttribute("style", "display: block;");
     document.getElementById("coin").innerHTML = window.atob(nts);
     setInterval(function () {
         if (window.navigator.onLine == false) {
