@@ -36,7 +36,8 @@ $(document).ready(function () {
             $(".coin").css("display", "block");
             $(".claim").css("display", "flex");
             $(".notxt").css("display", "block");
-            //win
+
+            // win
 
             $(".notxt").click(function(){
                 let point = Number(window.atob(nts)) + 1;
