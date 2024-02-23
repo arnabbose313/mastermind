@@ -1,4 +1,4 @@
-const nam = document.getElementById("name");
+const nam = document.getElementById("names");
 const mail = document.getElementById("email");
 const mas = document.getElementById("message");
 
