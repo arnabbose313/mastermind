@@ -5,12 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sir Arnab Bose</title>
-	<link rel="stylesheet" href="https://arnabbose313.github.io/mastermind/style.css">
+	<!-- <link rel="stylesheet" href="https://arnabbose313.github.io/mastermind/style.css"> -->
+	<link rel="stylesheet" href="../test/style.css">
+	<!-- Check the link -->
 </head>
 
 <body>
 	<div id="nav">
-		<img src="https://arnabbose313.github.io/mastermind/cross.png" alt="Profile" id="photo1">
+		<img src="https://arnabbose313.github.io/mastermind/cross.png" alt="Back" id="photo1">
 	</div>
 	<div id="option">
 		<div class="child-option" onclick="alert('r')">
@@ -29,6 +31,28 @@
 			Redeem Your Money
 		</div>
 	</div>
+	<div class="redeem-outer" style="display: none;">
+		<div class="redeem-inner">
+			<div>
+				<form>
+					<div class="cross">
+						<img src="https://arnabbose313.github.io/mastermind/cross.png" alt="Back">
+					</div>
+					<label for="fname">Account number</label>
+					<input type="password" id="account" placeholder="Account number...." inputmode="numeric"
+						pattern="[0-9]">
+					<label for="lname">Confirm account number</label>
+					<input type="password" id="con-account" placeholder="Confirm account number..." inputmode="numeric"
+						pattern="[0-9]">
+					<label for="lname">IFSC number</label>
+					<input type="text" id="ifsc" placeholder="IFSC number...">
+					<label for="lname">Email</label>
+					<input type="email" id="email" placeholder="Email...">
+					<button type="submit" id="redeem-submit">Withdraw 100 coin</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="https://arnabbose313.github.io/mastermind/jquery.js"></script>
 	<script src="ncd.js"></script>
 	<script type="text/javascript">
@@ -36,7 +60,12 @@
 			$("#photo1").click(function () {
 				window.location.href = "main.html";
 			});
-			$("")
+			$(".cross").click(function(){
+				$(".redeem-outer").css("display", "none");
+			});
+			$("#redeem").click(function () {
+				$(".redeem-outer").css("display", "flex");
+			});
 		});
 	</script>
 </body>
