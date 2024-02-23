@@ -99,3 +99,8 @@ h1 {
 	margin: 0px auto 0 auto;
 	padding: 30px 5px 30px 0px;
 }
+.redeem-outer{
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	inset: 0px;
+}
