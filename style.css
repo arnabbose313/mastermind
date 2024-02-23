@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-#hello{
+#hello {
 	display: none;
 }
 
@@ -99,8 +99,52 @@ h1 {
 	margin: 0px auto 0 auto;
 	padding: 30px 5px 30px 0px;
 }
-.redeem-outer{
+
+.redeem-outer {
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	inset: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.redeem-inner {
+	width: 90VW;
+	height: auto;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+.redeem-inner input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.redeem-inner button{
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.redeem-inner button:hover {
+	background-color: #45a049;
+}
+
+.redeem-inner form{
+	padding: 20px;
+}
+.cross img{
+	width: 20px;
+	float: right;
 }
