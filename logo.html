@@ -17,11 +17,31 @@
 				<marquee direction="right" width="90%" scrollamount="7" behavior="alternate">Please check your network
 					connection</marquee>
 			</p>
-			<p class="button">Retry</p>
+			<p class="button" id="retry">Retry</p>
 		</div>
 	</div>
 	<script src="https://arnabbose313.github.io/mastermind/jquery.js"></script>
-	<script src="https://arnabbose313.github.io/mastermind/js2.js"></script>
+	<script>
+		let loc = window.location.search.toString().slice(1, window.location.search.length);
+		if (loc == "net") {
+			offline();
+		} else {
+			setTimeout(function () {
+				let status = window.navigator.onLine;
+				if (status == true) {
+					window.location.href = "main.html";
+				} else if (status == false) {
+					window.location.href = window.location.href + "?net";
+				}
+			}, 3000);
+		}
+		document.getElementById("retry").addEventListener("click", function () {
+			window.location.href = "logo.html";
+		})
+		function offline() {
+			$(".network").css("display", "flex");
+		}
+	</script>
 </body>
 
 </html>
