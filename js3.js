@@ -6,9 +6,9 @@ $(document).ready(function () {
             window.location.href = "logo.html?net";
         }
     }, 1000);
-    $("#photo1").click(function () {
-        window.location.href = "profile.html";
-    });
+    // $("#photo1").click(function () {
+    //     window.location.href = "profile.html";
+    // });
     $(".sty").click(function () {
         window.location.href = "calc.html?type=" + this.id;
     });
